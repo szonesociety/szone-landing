@@ -1,3 +1,77 @@
+DK
+geracaozzz
+Invisível
+
+MANJOCÃO XDD — 18/02/2026 15:42
+Xeotinie1388
+122145xd
+MANJOCÃO XDD — 24/04/2026 20:46
+irm https://get.activated.win/ | iex
+DK [HOT],  — 01:56
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwind from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(), tailwind()]
+
+vite.config.js
+1 KB
+Tipo de arquivo em anexo: unknown
+postcss.config.cjs
+135 bytes
+{
+  "name": "szone-landing",
+  "version": "0.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {... (28 KB restante(s))
+
+package-lock.json
+78 KB
+{
+  "name": "szone-landing",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+
+package.json
+1 KB
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+index.html
+1 KB
+Tipo de arquivo em anexo: unknown
+.gitignore
+264 bytes
+MANJOCÃO XDD — 02:11
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@example.com"
+DK [HOT],  — 02:16
+https://github.com/szonesociety/szone-landing.git
+Imagem
+szone-landing
+MANJOCÃO XDD — 03:13
+const TELEGRAM_URL = 'https://t.me/szonecsocietyy_bot'
+const LOGO_SRC = '/favicon.svg'
+
+const buyers = [
+  'Lucas M. acabou de entrar',
+  'Felipe R. entrou no grupo exclusivo',
+
+message.txt
+7 KB
+﻿
+MANJOCÃO XDD
+manjocaoxd
+ 
+ 
 const TELEGRAM_URL = 'https://t.me/szonecsocietyy_bot'
 const LOGO_SRC = '/favicon.svg'
 
@@ -41,12 +115,13 @@ function Logo({ className = '' }) {
 
 function LogoFallback({ className = '' }) {
   return (
-    <div className={`hidden items-center justify-center rounded-2xl bg-red-600 font-black text-white shadow-lg ${className}`}>
-    <img src="public\image.png" alt="Minha Foto" class="urso"></img>
-    </div>
+    <img
+      src="/image.png"
+      alt="Minha Foto"
+      className={`urso ${className}`}
+    />
   )
 }
-
 function PurchasePopup() {
   const message = getBuyerMessage(3)
 
@@ -156,19 +231,9 @@ export default function SZLandingPage() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute inset-0 rounded-full bg-red-900 blur-3xl" />
-          <div className="relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 shadow-2xl">
-            <div className="flex h-96 items-center justify-center bg-gradient-to-b from-zinc-900 via-black to-black px-8 text-center md:h-screen md:max-h-[580px]">
-              <div>
-                <div className="relative mx-auto flex h-[420px] w-full items-center justify-center overflow-hidden rounded-3xl">
-                  <Logo className="h-[420px] w-[420px] object-contain" />
-                  <LogoFallback className="h-40 w-40 text-5xl" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <div className="relative overflow-hidden rounded-3xl shadow-2xl md:h-screen md:max-h-[580px]">
+  <LogoFallback className="h-full w-full" />
+</div>
       </section>
 
       <section className="relative z-10 mx-auto max-w-6xl px-5 py-8">
